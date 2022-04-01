@@ -3,6 +3,8 @@ library translations;
 import 'dart:collection';
 import 'dart:ui';
 
+import 'translation_locales.dart';
+
 /// Class that holds all things to
 /// translate the Strings
 class Translation {
@@ -14,26 +16,13 @@ class Translation {
   /// set it in the [init] method, and can't change it later
   static List<Locale> get supportedLocales => _supportedLocales;
 
-  /// English Locale.
-  /// This is the Standard Locale if none is provided
-  /// This is connected to the US Language Code
-  static const Locale english = Locale("en", "US");
-
-  /// German Locale / Language
-  /// This is connected with the Germany Language Code
-  static const Locale german = Locale("de", "DE");
-
-  /// French Locale / Language
-  /// This is connected with the France Language Code
-  static const Locale french = Locale("fr", "FR");
-
   /// The Active Locale at the Moment while
   /// the String is translated
-  static Locale activeLocale = english;
+  static Locale activeLocale = TranslationLocales.english;
 
   /// The Default Locale, the Language in which
   /// you write your Text / Strings in the Code
-  static Locale _defaultLocale = english;
+  static Locale _defaultLocale = TranslationLocales.english;
 
   /// The Default Locale, the Language in which
   /// you write your Text / Strings in the Code.

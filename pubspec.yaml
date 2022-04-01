@@ -1,11 +1,11 @@
 name: translations
 description: A Dart Package to translate Strings
 version: 0.0.1
-homepage:
+repository: https://github.com/Jules-sh/Translations
 
 environment:
   sdk: ">=2.16.2 <3.0.0"
-  flutter: ">=1.17.0"
+  flutter: ">=2.0.0"
 
 dependencies:
   flutter:

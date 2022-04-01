@@ -3,6 +3,7 @@ library translations;
 import 'package:flutter/material.dart';
 import 'package:translations/translations.dart';
 
+/// Homescreen Widget for the Example App
 class Homescreen extends StatefulWidget {
   const Homescreen({Key? key}) : super(key: key);
 
@@ -10,6 +11,9 @@ class Homescreen extends StatefulWidget {
   State<Homescreen> createState() => _HomescreenState();
 }
 
+/// State for teh Homesceen.
+/// This shows a AppBar and a Text in the Center
+/// of the Body
 class _HomescreenState extends State<Homescreen> {
   @override
   Widget build(BuildContext context) {

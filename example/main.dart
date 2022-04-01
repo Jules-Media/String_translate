@@ -5,10 +5,12 @@ import 'package:translations/translations.dart';
 
 import 'homescreen.dart';
 
+/// Main Method which starts the Example App
 void main(List<String> args) {
   runApp(const ExampleApp());
 }
 
+/// Example App
 class ExampleApp extends StatefulWidget {
   const ExampleApp({Key? key}) : super(key: key);
 
@@ -16,13 +18,15 @@ class ExampleApp extends StatefulWidget {
   State<ExampleApp> createState() => _ExampleAppState();
 }
 
+/// Example App State
 class _ExampleAppState extends State<ExampleApp> {
   @override
   Widget build(BuildContext context) {
     // supported Locales
     const _supportedLocales = <Locale>[
-      Locale("en", "US"),
-      Locale("de", "DE"),
+      TranslationLocales.english,
+      TranslationLocales.german,
+      TranslationLocales.french,
     ];
 
     // Default Language
@@ -33,12 +37,12 @@ class _ExampleAppState extends State<ExampleApp> {
     // The Translations
     final _translations = <String, Map<Locale, String>>{
       "Example": {
-        Translation.german: "Beispiel",
-        Translation.french: "Exemple",
+        TranslationLocales.german: "Beispiel",
+        TranslationLocales.french: "Exemple",
       },
       "This is a Text": {
-        Translation.german: "Das ist ein Text",
-        Translation.french: "Ceci est un texte"
+        TranslationLocales.german: "Das ist ein Text",
+        TranslationLocales.french: "Ceci est un texte"
       }
     };
 
