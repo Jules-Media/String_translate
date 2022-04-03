@@ -1,7 +1,7 @@
 library translations;
 
 import 'package:flutter/material.dart';
-import 'package:translations/translations.dart';
+import 'package:string_translate/string_translate.dart';
 
 import 'homescreen.dart';
 

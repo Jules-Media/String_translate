@@ -1,7 +1,7 @@
-name: translations
+name: string_translate
 description: A Dart Package to translate Strings
 version: 0.0.1
-repository: https://github.com/Jules-sh/Translations
+repository: https://github.com/Jules-sh/String_translate
 
 environment:
   sdk: ">=2.16.2 <3.0.0"
