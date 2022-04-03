@@ -18,4 +18,8 @@ class TranslationLocales {
   /// French.
   /// This is connected to the France country Code
   static const Locale french = Locale("fr", "FR");
+
+  /// Spanish.
+  /// This is connected to the Spain country Code
+  static const Locale spanish = Locale("es", "ES");
 }
