@@ -5,3 +5,7 @@
 ## 0.0.2
 
 * Added Description in pubspec.yaml. Completed Pubspey.yaml File.
+
+## 0.0.3
+
+* Renamed Package
