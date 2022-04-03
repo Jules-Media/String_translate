@@ -1,4 +1,4 @@
-library translations;
+library string_translate;
 
 import 'dart:ui';
 

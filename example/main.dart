@@ -1,4 +1,4 @@
-library translations;
+library string_translate;
 
 import 'package:flutter/material.dart';
 import 'package:string_translate/string_translate.dart';
