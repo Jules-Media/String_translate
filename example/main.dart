@@ -23,11 +23,11 @@ class _ExampleAppState extends State<ExampleApp> {
   @override
   Widget build(BuildContext context) {
     // supported Locales
-    const _supportedLocales = <Locale>[
+    final _supportedLocales = <Locale>{
       TranslationLocales.english,
       TranslationLocales.german,
       TranslationLocales.french,
-    ];
+    };
 
     // Default Language
     // This is the Language you write your Strings in the Code

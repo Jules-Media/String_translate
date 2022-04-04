@@ -9,3 +9,7 @@
 ## 0.0.3
 
 * Renamed Package
+
+## 0.0.4
+
+* Refactor List to Set

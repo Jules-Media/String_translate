@@ -9,12 +9,12 @@ import 'translation_locales.dart';
 /// translate the Strings
 class Translation {
   /// All the Supported Locales
-  static List<Locale> _supportedLocales = [];
+  static Set<Locale> _supportedLocales = {};
 
   /// All the Supported Locales.
   /// This is hidden behind a getter, because you have to
   /// set it in the [init] method, and can't change it later
-  static List<Locale> get supportedLocales => _supportedLocales;
+  static Set<Locale> get supportedLocales => _supportedLocales;
 
   /// The Active Locale at the Moment while
   /// the String is translated
@@ -41,7 +41,7 @@ class Translation {
   /// Initializes the Translation Class
   /// with all Values needed
   static void init({
-    required List<Locale> supportedLocales,
+    required Set<Locale> supportedLocales,
     required Locale defaultLocale,
     required Map<String, Map<Locale, String>> translations,
   }) {
