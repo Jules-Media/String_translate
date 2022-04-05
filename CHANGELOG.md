@@ -13,3 +13,8 @@
 ## 0.0.4
 
 * Refactor List to Set
+
+## 0.0.5
+
+* Add Standard Translations
+* Adjust Example

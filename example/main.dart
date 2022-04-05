@@ -27,6 +27,7 @@ class _ExampleAppState extends State<ExampleApp> {
       TranslationLocales.english,
       TranslationLocales.german,
       TranslationLocales.french,
+      TranslationLocales.spanish,
     };
 
     // Default Language
@@ -35,16 +36,23 @@ class _ExampleAppState extends State<ExampleApp> {
     final Locale _defaultLocale = _supportedLocales.first;
 
     // The Translations
-    final _translations = <String, Map<Locale, String>>{
+    final _ownTranslations = <String, Map<Locale, String>>{
       "Example": {
         TranslationLocales.german: "Beispiel",
         TranslationLocales.french: "Exemple",
+        TranslationLocales.spanish: "Ejemplo",
       },
       "This is a Text": {
         TranslationLocales.german: "Das ist ein Text",
-        TranslationLocales.french: "Ceci est un texte"
-      }
+        TranslationLocales.french: "Ceci est un texte",
+        TranslationLocales.spanish: "Este es un texto",
+      },
     };
+
+    // Create multiple Maps to the final one
+    final Map<String, Map<Locale, String>> _translations = {};
+    _translations.addAll(_ownTranslations);
+    _translations.addAll(StandardTranslations.actions);
 
     // Call the init Method
     Translation.init(
