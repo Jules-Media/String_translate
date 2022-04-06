@@ -18,3 +18,8 @@
 
 * Add Standard Translations
 * Adjust Example
+
+## 0.0.6
+
+* Add some Standard Translations
+* Adjust Example to it

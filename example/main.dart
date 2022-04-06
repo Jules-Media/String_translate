@@ -51,8 +51,15 @@ class _ExampleAppState extends State<ExampleApp> {
 
     // Create multiple Maps to the final one
     final Map<String, Map<Locale, String>> _translations = {};
+
+    // Translations from Above
     _translations.addAll(_ownTranslations);
+
+    // Standard Translations for actions
     _translations.addAll(StandardTranslations.actions);
+
+    // Standard Translations for errors
+    _translations.addAll(StandardTranslations.error);
 
     // Call the init Method
     Translation.init(

@@ -2,7 +2,7 @@ library string_translate;
 
 import 'dart:ui';
 
-import 'package:string_translate/string_translate.dart';
+import 'translation_locales.dart';
 
 /// Class in which all Standard Translations
 /// the Package provides are stores
@@ -25,6 +25,33 @@ class StandardTranslations {
         TranslationLocales.german: "Weiter",
         TranslationLocales.french: "Continuez",
         TranslationLocales.spanish: "Continuar",
+      },
+      "Delete": {
+        TranslationLocales.german: "Löschen",
+        TranslationLocales.french: "Supprimer",
+        TranslationLocales.spanish: "Borrar",
+      }
+    };
+  }
+
+  /// Some of the words that are associated with Errors.
+  /// For Example: "Error" and "Exception"
+  static Map<String, Map<Locale, String>> get error {
+    return {
+      "Error": {
+        TranslationLocales.german: "Fehler",
+        TranslationLocales.french: "Erreur",
+        TranslationLocales.spanish: "Error",
+      },
+      "Exception": {
+        TranslationLocales.german: "Ausnahme",
+        TranslationLocales.french: "Exception",
+        TranslationLocales.spanish: "Excepción",
+      },
+      "Something went wrong": {
+        TranslationLocales.german: "Etwas ist schiefgelaugen",
+        TranslationLocales.french: "Quelque chose s'est mal passé",
+        TranslationLocales.spanish: "Algo salió mal"
       }
     };
   }
