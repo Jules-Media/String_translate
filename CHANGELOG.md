@@ -23,3 +23,7 @@
 
 * Add some Standard Translations
 * Adjust Example to it
+
+## 0.0.7
+
+* Update README.md

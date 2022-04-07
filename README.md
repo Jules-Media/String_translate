@@ -13,7 +13,11 @@ and the Flutter guide for
 
 This Plugin lets you translate Strings
 
-# String_Translate
+# String Translate
+
+Github: https://github.com/Jules-sh/String_translate \
+Pub.dev: https://pub.dev/packages/string_translate
+
 This Package can be used to translate Strings. You just have to 
 init the Package Code, provide your Translations and Locales / Languages
 you want to translate to and the Package does the rest for you :)
