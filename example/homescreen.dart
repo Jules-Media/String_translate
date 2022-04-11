@@ -1,7 +1,7 @@
 library string_translate;
 
 import 'package:flutter/material.dart';
-import 'package:string_translate/string_translate.dart';
+import 'package:string_translate/string_translate.dart' show Translate;
 
 /// Homescreen Widget for the Example App
 class Homescreen extends StatefulWidget {
@@ -18,13 +18,14 @@ class _HomescreenState extends State<Homescreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      extendBodyBehindAppBar: true,
       appBar: AppBar(
-        title: Text("Example".tr()),
+        title: Text('Example'.tr()),
         centerTitle: true,
         elevation: 5.0,
       ),
       body: Center(
-        child: Text("This is a Text".tr()),
+        child: Text('This is a Text'.tr()),
       ),
     );
   }

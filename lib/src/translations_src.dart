@@ -1,7 +1,7 @@
 library string_translate;
 
-import 'dart:collection';
-import 'dart:ui';
+import 'dart:collection' show HashMap;
+import 'dart:ui' show Locale;
 
 import 'translation_locales.dart';
 

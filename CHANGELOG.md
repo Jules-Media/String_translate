@@ -27,3 +27,9 @@
 ## 0.0.7
 
 * Update README.md
+
+## 0.0.8
+
+* Update Project
+* Update analysis_options.yaml
+* Update Example

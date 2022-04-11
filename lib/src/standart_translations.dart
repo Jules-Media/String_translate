@@ -1,6 +1,6 @@
 library string_translate;
 
-import 'dart:ui';
+import 'dart:ui' show Locale;
 
 import 'translation_locales.dart';
 
@@ -11,25 +11,25 @@ class StandardTranslations {
   /// Like for Example "Done", "Cancel" or "Continue".
   static Map<String, Map<Locale, String>> get actions {
     return {
-      "Done": {
-        TranslationLocales.german: "Fertig",
-        TranslationLocales.french: "Terminé",
-        TranslationLocales.spanish: "Hecho",
+      'Done': {
+        TranslationLocales.german: 'Fertig',
+        TranslationLocales.french: 'Terminé',
+        TranslationLocales.spanish: 'Hecho',
       },
-      "Cancel": {
-        TranslationLocales.german: "Abbrechen",
-        TranslationLocales.french: "Annuler",
-        TranslationLocales.spanish: "Cancelar",
+      'Cancel': {
+        TranslationLocales.german: 'Abbrechen',
+        TranslationLocales.french: 'Annuler',
+        TranslationLocales.spanish: 'Cancelar',
       },
-      "Continue": {
-        TranslationLocales.german: "Weiter",
-        TranslationLocales.french: "Continuez",
-        TranslationLocales.spanish: "Continuar",
+      'Continue': {
+        TranslationLocales.german: 'Weiter',
+        TranslationLocales.french: 'Continuez',
+        TranslationLocales.spanish: 'Continuar',
       },
-      "Delete": {
-        TranslationLocales.german: "Löschen",
-        TranslationLocales.french: "Supprimer",
-        TranslationLocales.spanish: "Borrar",
+      'Delete': {
+        TranslationLocales.german: 'Löschen',
+        TranslationLocales.french: 'Supprimer',
+        TranslationLocales.spanish: 'Borrar',
       }
     };
   }
@@ -38,20 +38,20 @@ class StandardTranslations {
   /// For Example: "Error" and "Exception"
   static Map<String, Map<Locale, String>> get error {
     return {
-      "Error": {
-        TranslationLocales.german: "Fehler",
-        TranslationLocales.french: "Erreur",
-        TranslationLocales.spanish: "Error",
+      'Error': {
+        TranslationLocales.german: 'Fehler',
+        TranslationLocales.french: 'Erreur',
+        TranslationLocales.spanish: 'Error',
       },
-      "Exception": {
-        TranslationLocales.german: "Ausnahme",
-        TranslationLocales.french: "Exception",
-        TranslationLocales.spanish: "Excepción",
+      'Exception': {
+        TranslationLocales.german: 'Ausnahme',
+        TranslationLocales.french: 'Exception',
+        TranslationLocales.spanish: 'Excepción',
       },
-      "Something went wrong": {
-        TranslationLocales.german: "Etwas ist schiefgelaugen",
-        TranslationLocales.french: "Quelque chose s'est mal passé",
-        TranslationLocales.spanish: "Algo salió mal"
+      'Something went wrong': {
+        TranslationLocales.german: 'Etwas ist schiefgelaugen',
+        TranslationLocales.french: 'Quelque chose s\'est mal passé',
+        TranslationLocales.spanish: 'Algo salió mal'
       }
     };
   }

@@ -1,7 +1,7 @@
 library string_translate;
 
 import 'package:flutter/material.dart';
-import 'package:string_translate/string_translate.dart';
+import 'package:string_translate/string_translate.dart' hide Translate;
 
 import 'homescreen.dart';
 
@@ -37,15 +37,15 @@ class _ExampleAppState extends State<ExampleApp> {
 
     // The Translations
     final _ownTranslations = <String, Map<Locale, String>>{
-      "Example": {
-        TranslationLocales.german: "Beispiel",
-        TranslationLocales.french: "Exemple",
-        TranslationLocales.spanish: "Ejemplo",
+      'Example': {
+        TranslationLocales.german: 'Beispiel',
+        TranslationLocales.french: 'Exemple',
+        TranslationLocales.spanish: 'Ejemplo',
       },
-      "This is a Text": {
-        TranslationLocales.german: "Das ist ein Text",
-        TranslationLocales.french: "Ceci est un texte",
-        TranslationLocales.spanish: "Este es un texto",
+      'This is a Text': {
+        TranslationLocales.german: 'Das ist ein Text',
+        TranslationLocales.french: 'Ceci est un texte',
+        TranslationLocales.spanish: 'Este es un texto',
       },
     };
 
@@ -68,9 +68,22 @@ class _ExampleAppState extends State<ExampleApp> {
       translations: _translations,
     );
 
-    return const MaterialApp(
-      title: "Translation Example",
-      home: Homescreen(),
+    return MaterialApp(
+      /* Develooer Section */
+      checkerboardOffscreenLayers: false,
+      checkerboardRasterCacheImages: false,
+      showPerformanceOverlay: false,
+      showSemanticsDebugger: false,
+      debugShowCheckedModeBanner: true,
+      debugShowMaterialGrid: false,
+
+      /* App Section */
+      themeMode: ThemeMode.system,
+      theme: ThemeData.light(),
+      darkTheme: ThemeData.dark(),
+      useInheritedMediaQuery: false,
+      title: 'Translation Example',
+      home: const Homescreen(),
     );
   }
 }
