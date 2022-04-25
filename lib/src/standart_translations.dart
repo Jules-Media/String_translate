@@ -15,21 +15,25 @@ class StandardTranslations {
         TranslationLocales.german: 'Fertig',
         TranslationLocales.french: 'Terminé',
         TranslationLocales.spanish: 'Hecho',
+        TranslationLocales.portuguese: 'Feita',
       },
       'Cancel': {
         TranslationLocales.german: 'Abbrechen',
         TranslationLocales.french: 'Annuler',
         TranslationLocales.spanish: 'Cancelar',
+        TranslationLocales.portuguese: 'Cancelar',
       },
       'Continue': {
         TranslationLocales.german: 'Weiter',
         TranslationLocales.french: 'Continuez',
         TranslationLocales.spanish: 'Continuar',
+        TranslationLocales.portuguese: 'Continuar',
       },
       'Delete': {
         TranslationLocales.german: 'Löschen',
         TranslationLocales.french: 'Supprimer',
         TranslationLocales.spanish: 'Borrar',
+        TranslationLocales.portuguese: 'Excluir',
       }
     };
   }
@@ -42,16 +46,19 @@ class StandardTranslations {
         TranslationLocales.german: 'Fehler',
         TranslationLocales.french: 'Erreur',
         TranslationLocales.spanish: 'Error',
+        TranslationLocales.portuguese: 'Erro',
       },
       'Exception': {
         TranslationLocales.german: 'Ausnahme',
         TranslationLocales.french: 'Exception',
         TranslationLocales.spanish: 'Excepción',
+        TranslationLocales.portuguese: 'Exceção',
       },
       'Something went wrong': {
         TranslationLocales.german: 'Etwas ist schiefgelaugen',
         TranslationLocales.french: 'Quelque chose s\'est mal passé',
-        TranslationLocales.spanish: 'Algo salió mal'
+        TranslationLocales.spanish: 'Algo salió mal',
+        TranslationLocales.portuguese: 'Algo deu errado',
       }
     };
   }

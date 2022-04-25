@@ -22,4 +22,8 @@ class TranslationLocales {
   /// Spanish.
   /// This is connected to the Spain country Code
   static const Locale spanish = Locale('es', 'ES');
+
+  /// Portuguese.
+  /// This is not connected to a Country Code
+  static const Locale portuguese = Locale('pt');
 }

@@ -26,6 +26,13 @@ you want to translate to and the Package does the rest for you :)
 
 Translate String to different Languages on runtime
 
+At the Moment this App nativly brings the Locales: \
+English \
+German \
+French \
+Spanish \
+Portuguese
+
 ## Getting started
 
 Just import the package.

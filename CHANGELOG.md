@@ -33,3 +33,8 @@
 * Update Project
 * Update analysis_options.yaml
 * Update Example
+
+
+## 0.0.9
+
+* Add Support for Portuguese
