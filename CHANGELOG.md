@@ -38,3 +38,9 @@
 ## 0.0.9
 
 * Add Support for Portuguese
+
+# 1.0.0
+
+* Add Change Language Method
+
+The first Version of this Package is ready to be released.

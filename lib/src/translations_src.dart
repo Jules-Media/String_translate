@@ -18,7 +18,11 @@ class Translation {
 
   /// The Active Locale at the Moment while
   /// the String is translated
-  static Locale activeLocale = TranslationLocales.english;
+  static Locale _activeLocale = TranslationLocales.english;
+
+  /// Getter for the Active Locale at the Moment while
+  /// the String is translated
+  static Locale get activeLocale => _activeLocale;
 
   /// The Default Locale, the Language in which
   /// you write your Text / Strings in the Code
@@ -50,14 +54,22 @@ class Translation {
     _translationsMap = translations;
   }
 
+  /// Changes the Language at the Runtime.
+  /// Mostly used if your App has a Language Chooser Dialog
+  /// or something similar.
+  /// This Method has to be called in a setState(() {}) to work properly
+  static void changeLanguage(Locale newLocale) {
+    _activeLocale = newLocale;
+  }
+
   /// The Method called to Translate the String.
-  /// This returns the String translated to the [activeLocale].
+  /// This returns the String translated to the [_activeLocale].
   /// If you did not specify a Translation for the
   /// [input] it returns the [input]
-  static String translate(String input) {
+  static String _translate(String input) {
     final _translatedMap = _translations[input];
     if (_translatedMap != null) {
-      return _translatedMap[activeLocale]!;
+      return _translatedMap[_activeLocale]!;
     } else {
       return input;
     }
@@ -71,10 +83,10 @@ extension Translate on String {
   /// This method takes no time when calling it with the default Locale
   /// because then it just returns the String you called it on
   String tr() {
-    if (Translation.activeLocale == Translation.defaultLocation) {
+    if (Translation._activeLocale == Translation.defaultLocation) {
       return this;
     } else {
-      return Translation.translate(this);
+      return Translation._translate(this);
     }
   }
 }
