@@ -48,3 +48,7 @@ The first Version of this Package is ready to be released.
 ## 1.1.0
 
 * Add Localization Delegates
+
+## 1.1.1
+
+* Export Delegates
