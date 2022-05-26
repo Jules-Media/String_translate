@@ -67,9 +67,9 @@ class Translation {
   /// If you did not specify a Translation for the
   /// [input] it returns the [input]
   static String _translate(String input) {
-    final _translatedMap = _translations[input];
-    if (_translatedMap != null) {
-      return _translatedMap[_activeLocale]!;
+    final translatedMap = _translations[input];
+    if (translatedMap != null) {
+      return translatedMap[_activeLocale]!;
     } else {
       return input;
     }

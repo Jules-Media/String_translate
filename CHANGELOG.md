@@ -44,3 +44,7 @@
 * Add Change Language Method
 
 The first Version of this Package is ready to be released.
+
+## 1.1.0
+
+* Add Localization Delegates

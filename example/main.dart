@@ -23,7 +23,7 @@ class _ExampleAppState extends State<ExampleApp> {
   @override
   Widget build(BuildContext context) {
     // supported Locales
-    final _supportedLocales = <Locale>{
+    final supportedLocales = <Locale>{
       TranslationLocales.english,
       TranslationLocales.german,
       TranslationLocales.french,
@@ -33,10 +33,10 @@ class _ExampleAppState extends State<ExampleApp> {
     // Default Language
     // This is the Language you write your Strings in the Code
     // In this Example it is English (US)
-    final Locale _defaultLocale = _supportedLocales.first;
+    final Locale defaultLocale = supportedLocales.first;
 
     // The Translations
-    final _ownTranslations = <String, Map<Locale, String>>{
+    final ownTranslations = <String, Map<Locale, String>>{
       'Example': {
         TranslationLocales.german: 'Beispiel',
         TranslationLocales.french: 'Exemple',
@@ -50,22 +50,22 @@ class _ExampleAppState extends State<ExampleApp> {
     };
 
     // Create multiple Maps to the final one
-    final Map<String, Map<Locale, String>> _translations = {};
+    final Map<String, Map<Locale, String>> translations = {};
 
     // Translations from Above
-    _translations.addAll(_ownTranslations);
+    translations.addAll(ownTranslations);
 
     // Standard Translations for actions
-    _translations.addAll(StandardTranslations.actions);
+    translations.addAll(StandardTranslations.actions);
 
     // Standard Translations for errors
-    _translations.addAll(StandardTranslations.error);
+    translations.addAll(StandardTranslations.error);
 
     // Call the init Method
     Translation.init(
-      supportedLocales: _supportedLocales,
-      defaultLocale: _defaultLocale,
-      translations: _translations,
+      supportedLocales: supportedLocales,
+      defaultLocale: defaultLocale,
+      translations: translations,
     );
 
     return MaterialApp(
