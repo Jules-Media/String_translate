@@ -15,7 +15,7 @@ This Plugin lets you translate Strings
 
 # String Translate
 
-Github: https://github.com/Jules-sh/String_translate \
+Github: https://github.com/Jules-Media/String_translate \
 Pub.dev: https://pub.dev/packages/string_translate
 
 This Package can be used to translate Strings. You just have to 
