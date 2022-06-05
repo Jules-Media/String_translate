@@ -6,6 +6,8 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 /// Contains the LocalizationDelegates for
 /// different Apps
 class TranslationDelegates {
+  const TranslationDelegates();
+
   /// Material Localization Delegate
   static const _materialDelegation = GlobalMaterialLocalizations.delegate;
 

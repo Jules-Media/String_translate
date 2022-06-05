@@ -5,6 +5,8 @@ import 'dart:ui' show Locale;
 /// All the Locales the Translations PLugin
 /// supports out of the Box
 class TranslationLocales {
+  const TranslationLocales();
+
   /// English.
   /// This is the Default Location if none is provided
   /// to the package.

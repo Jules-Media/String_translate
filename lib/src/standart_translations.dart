@@ -7,6 +7,8 @@ import 'translation_locales.dart';
 /// Class in which all Standard Translations
 /// the Package provides are stores
 class StandardTranslations {
+  const StandardTranslations();
+
   /// Some of the Words that are associated with Actions.
   /// Like for Example "Done", "Cancel" or "Continue".
   static Map<String, Map<Locale, String>> get actions {
