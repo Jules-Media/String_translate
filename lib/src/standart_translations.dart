@@ -36,6 +36,24 @@ class StandardTranslations {
         TranslationLocales.french: 'Supprimer',
         TranslationLocales.spanish: 'Borrar',
         TranslationLocales.portuguese: 'Excluir',
+      },
+      'Ok': {
+        TranslationLocales.german: 'Ok',
+        TranslationLocales.french: 'D\'accord',
+        TranslationLocales.spanish: 'OK',
+        TranslationLocales.portuguese: 'OK'
+      },
+      'OK': {
+        TranslationLocales.german: 'Ok',
+        TranslationLocales.french: 'D\'accord',
+        TranslationLocales.spanish: 'OK',
+        TranslationLocales.portuguese: 'OK'
+      },
+      'Confirm': {
+        TranslationLocales.german: 'Bestätigen',
+        TranslationLocales.french: 'Confirmer',
+        TranslationLocales.spanish: 'Confirmar',
+        TranslationLocales.portuguese: 'confirme'
       }
     };
   }

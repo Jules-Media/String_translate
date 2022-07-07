@@ -1,32 +1,34 @@
-## 0.0.1
+## 1.1.3
 
-* The initial Version implements the first Version of the Code
+* Add new Standard Translations
 
-## 0.0.2
 
-* Added Description in pubspec.yaml. Completed Pubspey.yaml File.
+## 1.1.2
 
-## 0.0.3
+* Update README Link
 
-* Renamed Package
 
-## 0.0.4
+## 1.1.1
 
-* Refactor List to Set
+* Export Delegates
 
-## 0.0.5
 
-* Add Standard Translations
-* Adjust Example
+## 1.1.0
 
-## 0.0.6
+* Add Localization Delegates
 
-* Add some Standard Translations
-* Adjust Example to it
 
-## 0.0.7
+# 1.0.0
 
-* Update README.md
+* Add Change Language Method
+
+The first Version of this Package is ready to be released.
+
+
+## 0.0.9
+
+* Add Support for Portuguese
+
 
 ## 0.0.8
 
@@ -35,24 +37,38 @@
 * Update Example
 
 
-## 0.0.9
+## 0.0.7
 
-* Add Support for Portuguese
+* Update README.md
 
-# 1.0.0
 
-* Add Change Language Method
+## 0.0.6
 
-The first Version of this Package is ready to be released.
+* Add some Standard Translations
+* Adjust Example to it
 
-## 1.1.0
 
-* Add Localization Delegates
+## 0.0.5
 
-## 1.1.1
+* Add Standard Translations
+* Adjust Example
 
-* Export Delegates
 
-## 1.1.2
+## 0.0.4
 
-* Update README Link
+* Refactor List to Set
+
+
+## 0.0.3
+
+* Renamed Package
+
+
+## 0.0.2
+
+* Added Description in pubspec.yaml. Completed Pubspey.yaml File.
+
+
+## 0.0.1
+
+* The initial Version implements the first Version of the Code
