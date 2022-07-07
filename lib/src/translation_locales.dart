@@ -2,6 +2,8 @@ library string_translate;
 
 import 'dart:ui' show Locale;
 
+import 'translations.dart' show Translation;
+
 /// All the Locales the Translations PLugin
 /// supports out of the Box
 class TranslationLocales {
@@ -11,21 +13,32 @@ class TranslationLocales {
   /// This is the Default Location if none is provided
   /// to the package.
   /// This is commected to the US country Code
-  static const Locale english = Locale('en', 'US');
+  static Locale get english => const Locale('en', 'US');
 
   /// German.
   /// This is connected to the Germany country Code
-  static const Locale german = Locale('de', 'DE');
+  static Locale get german => const Locale('de', 'DE');
 
   /// French.
   /// This is connected to the France country Code
-  static const Locale french = Locale('fr', 'FR');
+  static Locale get french => const Locale('fr', 'FR');
 
   /// Spanish.
   /// This is connected to the Spain country Code
-  static const Locale spanish = Locale('es', 'ES');
+  static Locale get spanish => const Locale('es', 'ES');
 
   /// Portuguese.
   /// This is not connected to a Country Code
-  static const Locale portuguese = Locale('pt');
+  static Locale get portuguese => const Locale('pt');
+
+  /// All Translation Locales in one Set.
+  /// Could be used in MaterialApp.supportedLocales
+  /// or in the [Translation.init] Method
+  static Set<Locale> get all => {
+        english,
+        german,
+        french,
+        spanish,
+        portuguese,
+      };
 }
