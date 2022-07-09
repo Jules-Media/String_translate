@@ -82,4 +82,41 @@ class StandardTranslations {
       }
     };
   }
+
+  /// Translations for all the
+  /// Languages that are provided by [TranslationLocales]
+  static Map<String, Map<Locale, String>> get languages {
+    return {
+      'English': {
+        TranslationLocales.german: 'Englisch',
+        TranslationLocales.french: 'Anglais',
+        TranslationLocales.spanish: 'Inglés',
+        TranslationLocales.portuguese: 'Inglês',
+      },
+      'German': {
+        TranslationLocales.german: 'Deutsch',
+        TranslationLocales.french: 'Allemand',
+        TranslationLocales.spanish: 'Alemán',
+        TranslationLocales.portuguese: 'Germando',
+      },
+      'French': {
+        TranslationLocales.german: 'Französisch',
+        TranslationLocales.french: 'Français',
+        TranslationLocales.spanish: 'Francés',
+        TranslationLocales.portuguese: 'Francês',
+      },
+      'Spanish': {
+        TranslationLocales.german: 'Spanisch',
+        TranslationLocales.french: 'Espagnol',
+        TranslationLocales.spanish: 'Español',
+        TranslationLocales.portuguese: 'Espanhol',
+      },
+      'Portuguese': {
+        TranslationLocales.german: 'Portugiesisch',
+        TranslationLocales.french: 'Portugais',
+        TranslationLocales.spanish: 'Portugués',
+        TranslationLocales.portuguese: 'Português',
+      },
+    };
+  }
 }

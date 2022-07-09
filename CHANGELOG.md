@@ -1,3 +1,8 @@
+## 1.3.0
+
+* Add StandardTranslations.languages
+
+
 ## 1.2.0
 
 * Change TranlsationLocales to Getters.
