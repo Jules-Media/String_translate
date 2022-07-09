@@ -71,7 +71,8 @@ class Translation {
   static String _translate(String input) {
     final translatedMap = _translations[input];
     if (translatedMap != null) {
-      return translatedMap[_activeLocale]!;
+      return translatedMap[_activeLocale] ??
+          'Translation for this Language isn\'t provided';
     } else {
       return input;
     }

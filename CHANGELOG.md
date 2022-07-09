@@ -1,6 +1,13 @@
+## 1.4.1
+
+* Bugfix, that if you have english version of a String, but not the one
+from another Langauge, that it does not raise an Runtime Error now.
+
+
 ## 1.4.0
 
 * Add getter for the Locale for passed Language as String.
+
 
 ## 1.3.0
 
