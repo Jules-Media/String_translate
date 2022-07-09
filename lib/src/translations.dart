@@ -76,6 +76,27 @@ class Translation {
       return input;
     }
   }
+
+  /// Returns the Locale for
+  /// the matching [language].
+  /// The [language] has to be pass in english.
+  static Locale getLocaleFor(String language) {
+    final String localLanguage = language.toLowerCase();
+    switch (localLanguage) {
+      case 'english':
+        return TranslationLocales.english;
+      case 'german':
+        return TranslationLocales.german;
+      case 'spanish':
+        return TranslationLocales.spanish;
+      case 'french':
+        return TranslationLocales.french;
+      case 'portuguese':
+        return TranslationLocales.portuguese;
+      default:
+        return _activeLocale;
+    }
+  }
 }
 
 /// Extension on String to Translate the String.

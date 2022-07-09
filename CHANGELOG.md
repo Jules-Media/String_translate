@@ -1,3 +1,7 @@
+## 1.4.0
+
+* Add getter for the Locale for passed Language as String.
+
 ## 1.3.0
 
 * Add StandardTranslations.languages
