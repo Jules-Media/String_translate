@@ -119,4 +119,14 @@ class StandardTranslations {
       },
     };
   }
+
+  /// Returns all the Standard Translations
+  /// in one map.
+  static Map<String, Map<Locale, String>> get all {
+    final Map<String, Map<Locale, String>> map = {};
+    map.addAll(actions);
+    map.addAll(error);
+    map.addAll(languages);
+    return map;
+  }
 }

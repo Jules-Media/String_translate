@@ -8,6 +8,7 @@ import 'translation_locales.dart';
 /// Class that holds all things to
 /// translate the Strings
 class Translation {
+  // Constant Constructor.
   const Translation();
 
   /// All the Supported Locales

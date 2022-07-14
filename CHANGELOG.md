@@ -1,3 +1,8 @@
+## 1.4.2
+
+* Add StandardTranslations.all Getter
+
+
 ## 1.4.1
 
 * Bugfix, that if you have english version of a String, but not the one
@@ -40,7 +45,7 @@ from another Langauge, that it does not raise an Runtime Error now.
 * Add Localization Delegates
 
 
-# 1.0.0
+## 1.0.0
 
 * Add Change Language Method
 

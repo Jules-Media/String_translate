@@ -7,6 +7,7 @@ import 'translations.dart' show Translation;
 /// All the Locales the Translations PLugin
 /// supports out of the Box
 class TranslationLocales {
+  // Constatnt Constructor
   const TranslationLocales();
 
   /// English.

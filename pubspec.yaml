@@ -1,7 +1,7 @@
 name: string_translate
 description: A Dart Package which helps you translate Strings. This is avaible for android, IOS, macOS, Windows, Linux and on the Web.
-version: 1.4.1
-repository: https://github.com/Jules-sh/String_translate
+version: 1.4.2
+repository: https://github.com/Jules-Media/String_translate
 
 environment:
   sdk: ">=2.17.1 <3.0.0"

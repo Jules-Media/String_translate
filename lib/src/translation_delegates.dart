@@ -1,11 +1,16 @@
 library string_translate;
 
-import 'package:flutter/material.dart';
-import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:flutter/material.dart' show LocalizationsDelegate;
+import 'package:flutter_localizations/flutter_localizations.dart'
+    show
+        GlobalCupertinoLocalizations,
+        GlobalMaterialLocalizations,
+        GlobalWidgetsLocalizations;
 
 /// Contains the LocalizationDelegates for
 /// different Apps
 class TranslationDelegates {
+  // Constant Constructor
   const TranslationDelegates();
 
   /// Material Localization Delegate
