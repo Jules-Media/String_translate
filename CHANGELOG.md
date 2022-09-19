@@ -1,3 +1,13 @@
+## 1.4.4
+
+* Visibility Bugfix
+
+
+## 1.4.3
+
+* Add get Locale to TranslationLocales
+
+
 ## 1.4.2
 
 * Add StandardTranslations.all Getter

@@ -1,6 +1,6 @@
 name: string_translate
 description: A Dart Package which helps you translate Strings. This is avaible for android, IOS, macOS, Windows, Linux and on the Web.
-version: 1.4.2
+version: 1.4.4
 repository: https://github.com/Jules-Media/String_translate
 
 environment:
@@ -16,7 +16,7 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^2.0.0
+  flutter_lints: ^2.0.1
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec

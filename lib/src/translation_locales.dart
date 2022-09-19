@@ -42,4 +42,37 @@ class TranslationLocales {
         spanish,
         portuguese,
       };
+
+  /// Returns the Locale for the
+  /// given Language Code
+  static Locale getLocale(String string) {
+    final Locale output;
+    final String s;
+    if (string.length > 2) {
+      s = string.substring(0, 3);
+    } else {
+      s = string;
+    }
+    switch (s) {
+      case 'en':
+        output = english;
+        break;
+      case 'de':
+        output = german;
+        break;
+      case 'fr':
+        output = french;
+        break;
+      case 'es':
+        output = spanish;
+        break;
+      case 'pt':
+        output = portuguese;
+        break;
+      default:
+        output = english;
+        break;
+    }
+    return output;
+  }
 }
