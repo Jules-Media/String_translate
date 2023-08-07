@@ -1,3 +1,7 @@
+## 1.4.5
+
+* Update Dart and Flutter Version
+
 ## 1.4.4
 
 * Visibility Bugfix
