@@ -1,4 +1,4 @@
-library string_translate;
+library;
 
 import 'package:flutter/material.dart';
 import 'package:string_translate/string_translate.dart' hide Translate;
@@ -12,7 +12,7 @@ void main(List<String> args) {
 
 /// Example App
 class ExampleApp extends StatefulWidget {
-  const ExampleApp({Key? key}) : super(key: key);
+  const ExampleApp({super.key});
 
   @override
   State<ExampleApp> createState() => _ExampleAppState();
@@ -33,7 +33,7 @@ class _ExampleAppState extends State<ExampleApp> {
     // Default Language
     // This is the Language you write your Strings in the Code
     // In this Example it is English (US)
-    final Locale defaultLocale = supportedLocales.first;
+    final Locale defaultLocale = TranslationLocales.german;
 
     // The Translations
     final ownTranslations = <String, Map<Locale, String>>{
@@ -47,6 +47,9 @@ class _ExampleAppState extends State<ExampleApp> {
         TranslationLocales.french: 'Ceci est un texte',
         TranslationLocales.spanish: 'Este es un texto',
       },
+      'Hello': {
+        TranslationLocales.german: 'Hallo',
+      }
     };
 
     // Create multiple Maps to the final one
@@ -81,7 +84,6 @@ class _ExampleAppState extends State<ExampleApp> {
       themeMode: ThemeMode.system,
       theme: ThemeData.light(),
       darkTheme: ThemeData.dark(),
-      useInheritedMediaQuery: false,
       title: 'Translation Example',
       home: const Homescreen(),
     );

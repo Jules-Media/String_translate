@@ -1,11 +1,11 @@
-library string_translate;
+library;
 
 import 'package:flutter/material.dart';
 import 'package:string_translate/string_translate.dart' show Translate;
 
 /// Homescreen Widget for the Example App
 class Homescreen extends StatefulWidget {
-  const Homescreen({Key? key}) : super(key: key);
+  const Homescreen({super.key});
 
   @override
   State<Homescreen> createState() => _HomescreenState();
@@ -25,7 +25,7 @@ class _HomescreenState extends State<Homescreen> {
         elevation: 5.0,
       ),
       body: Center(
-        child: Text('This is a Text'.tr()),
+        child: Text('Hello test'.tr()),
       ),
     );
   }

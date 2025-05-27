@@ -1,3 +1,12 @@
+## 2.0.1
+
+* Bugfix for partial translations
+
+## 2.0.0
+
+* Update to match new flutter standards
+* implement partial translations
+
 ## 1.4.5
 
 * Update Dart and Flutter Version

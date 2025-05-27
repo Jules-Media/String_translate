@@ -1,4 +1,4 @@
-library string_translate;
+library;
 
 import 'package:flutter/material.dart' show LocalizationsDelegate;
 import 'package:flutter_localizations/flutter_localizations.dart'

@@ -1,7 +1,9 @@
-library string_translate;
+library;
 
 import 'dart:collection' show HashMap;
 import 'dart:ui' show Locale;
+
+import 'package:flutter/cupertino.dart';
 
 import 'translation_locales.dart';
 
@@ -73,9 +75,21 @@ class Translation {
     final translatedMap = _translations[input];
     if (translatedMap != null) {
       return translatedMap[_activeLocale] ??
-          'Translation for this Language isn\'t provided';
+          'Translation for this language not provided';
     } else {
-      return input;
+      // Try partial translation
+      final List<String> splitted = input.split(' ');
+      if (splitted.length <= 1) {
+        return input;
+      } else {
+        String res = '';
+        for (String split in splitted) {
+          // WARNING: Potential Endless loop, should be safe with if statement above
+          res += _translate(split);
+          res += ' ';
+        }
+        return res;
+      }
     }
   }
 

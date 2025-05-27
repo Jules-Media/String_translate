@@ -1,4 +1,4 @@
-library string_translate;
+library;
 
 // exports all the Files the package provides
 // to the outside.

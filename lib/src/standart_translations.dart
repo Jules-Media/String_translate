@@ -1,4 +1,4 @@
-library string_translate;
+library;
 
 import 'dart:ui' show Locale;
 
