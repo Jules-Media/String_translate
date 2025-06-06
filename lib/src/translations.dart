@@ -3,13 +3,11 @@ library;
 import 'dart:collection' show HashMap;
 import 'dart:ui' show Locale;
 
-import 'package:flutter/cupertino.dart';
-
 import 'translation_locales.dart';
 
 /// Class that holds all things to
 /// translate the Strings
-class Translation {
+final class Translation {
   // Constant Constructor.
   const Translation();
 

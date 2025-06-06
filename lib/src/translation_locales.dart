@@ -7,13 +7,13 @@ import 'translations.dart' show Translation;
 /// All the Locales the Translations PLugin
 /// supports out of the Box
 class TranslationLocales {
-  // Constatnt Constructor
+  // Constant Constructor
   const TranslationLocales();
 
   /// English.
   /// This is the Default Location if none is provided
   /// to the package.
-  /// This is commected to the US country Code
+  /// This is connected to the US country Code
   static Locale get english => const Locale('en', 'US');
 
   /// German.
